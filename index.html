@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8"/>
+    <title>隧道地质环境综合判识系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- 引入CSS样式表 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="chat-window">
+    <!-- 聊天记录容器 -->
+    <div id="chat-container">
+        <!-- 消息内容将由脚本动态插入 -->
+    </div>
+</div>
+
+<!-- 固定在底部的输入区域 -->
+<div class="typing-container">
+    <form id="question-form">
+        <input type="text" id="question-input" placeholder="请输入您的信息..." required/>
+        <button type="submit">发送</button>
+    </form>
+</div>
+
+<!-- 引入前端脚本 -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
